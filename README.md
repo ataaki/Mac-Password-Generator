@@ -1,1 +1,1 @@
-Usage: python pass_gen.py
+Usage: $ python pass_gen.py
