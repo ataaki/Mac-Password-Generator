@@ -1,4 +1,4 @@
-#Password Generator
+# Password Generator
 ```
 usage: pass_gen.py [-h] [-s] [-d] [-l LEN]
 
