@@ -1,3 +1,5 @@
+#Password Generator
+```
 usage: pass_gen.py [-h] [-s] [-d] [-l LEN]
 
 Generate strong passwords and copy it in clipboard. Characters used to
@@ -10,3 +12,4 @@ optional arguments:
   -d, --disable_copy  disable the copy in the clipboard. note that using
                       --disable_copy will automatically enable --show_pwd
   -l LEN, --len LEN   specify password length. (default is 30).
+ ```
