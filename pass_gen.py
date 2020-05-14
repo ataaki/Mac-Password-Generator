@@ -7,18 +7,18 @@ def write_to_clipboard(password):
 	process = subprocess.Popen(
 		'pbcopy', env={'LANG': 'en_US.UTF-8'}, stdin=subprocess.PIPE)
 	process.communicate(password.encode('utf-8'))
-	print 'New password copied to clipboard :)'
+	print('New password copied to clipboard :)')
 
 def gen_pass(len, chars):
 	if len is None:
 		len = 30
 	if chars is None:
 		chars = string.ascii_letters + string.digits + string.punctuation
-	password = ''.join([random.choice(chars) for n in xrange(len)])
+	password = ''.join([random.choice(chars) for n in range(len)])
 	return password
 
 def show_pass(password):
-	print password
+	print(password)
 
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser(description="Generate strong passwords and copy it in clipboard. Characters used to generate the password are picked from these: " + string.ascii_letters + string.digits + string.punctuation)
